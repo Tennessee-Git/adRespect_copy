@@ -12,5 +12,5 @@ Things to do:
 - [x] Footer
 - [ ] Scroll animation
 - [ ] Nav menu
-- [ ] SVGs
+- [x] SVGs
 - [ ] CSS fixes for button outlines
