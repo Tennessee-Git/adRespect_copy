@@ -361,7 +361,7 @@ li::marker {
   filter: grayscale(0);
 }
 
-.partner-logo img {
+.partner-logo > img {
   width: 300px;
   height: 150px;
 }
