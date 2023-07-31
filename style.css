@@ -353,11 +353,11 @@ li::marker {
   align-items: center;
 }
 
-.partner-logo {
+.partner-logo > img {
   filter: grayscale(1);
 }
 
-.partner-logo:hover {
+.partner-logo:hover > img {
   filter: grayscale(0);
 }
 
