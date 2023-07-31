@@ -2,6 +2,8 @@ const trailer = document.getElementById("trailer");
 const gradient = document.getElementById("gradient");
 const navbar = document.getElementById("header");
 const navbarText = document.querySelectorAll(".header-text");
+const svg = document.querySelector("svg");
+console.log(svg);
 
 window.onmousemove = (e) => {
   gradient.style.background = `radial-gradient(

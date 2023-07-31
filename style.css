@@ -13,6 +13,9 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-serif: "IBM Plex Serif", system-ui-serif, serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-button: "IBM Plex Mono", "Inter", system-ui, -apple-system,
+    "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 ::selection {
@@ -169,6 +172,7 @@ body:hover > #trailer {
   cursor: pointer;
   text-align: center;
   z-index: 100;
+  font-family: var(--font-family-button);
 }
 
 .btn-2 {
@@ -360,4 +364,18 @@ li::marker {
 
 .footer-button:hover {
   color: var(--primary-color);
+}
+
+.svg-outline {
+  stroke-dasharray: 500;
+  animation: outline-animation 1s ease forwards;
+}
+
+@keyframes outline-animation {
+  0% {
+    stroke-dashoffset: 500;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
