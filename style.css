@@ -33,6 +33,28 @@ body {
   overflow-y: scroll;
 }
 
+#disclaimer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(199, 78, 78);
+  z-index: 1000000000;
+}
+
+#disclaimer h1 {
+  font-size: 100px;
+}
+
+#disclaimer a {
+  font-size: 80px;
+}
+
 #trailer {
   height: 12px;
   width: 12px;

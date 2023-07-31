@@ -2,8 +2,10 @@ const trailer = document.getElementById("trailer");
 const gradient = document.getElementById("gradient");
 const navbar = document.getElementById("header");
 const navbarText = document.querySelectorAll(".header-text");
-const svg = document.querySelector("svg");
-console.log(svg);
+const disclaimer = document.getElementById("disclaimer");
+setTimeout(() => {
+  disclaimer.style.display = "none";
+}, 5000);
 
 window.onmousemove = (e) => {
   gradient.style.background = `radial-gradient(
