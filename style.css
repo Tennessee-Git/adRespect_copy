@@ -344,12 +344,26 @@ li::marker {
 
 .section-partner-logos {
   flex-direction: column;
+  gap: 10px;
 }
 
 .section-partner-row {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.partner-logo {
+  filter: grayscale(1);
+}
+
+.partner-logo:hover {
+  filter: grayscale(0);
+}
+
+.partner-logo img {
+  width: 300px;
+  height: 150px;
 }
 
 .text-italics {

@@ -1,10 +1,11 @@
 const trailer = document.getElementById("trailer");
+const trailerHighlight = document.getElementById("trailer-highlight");
 const gradient = document.getElementById("gradient");
 const navbar = document.getElementById("header");
 const navbarText = document.querySelectorAll(".header-text");
-const disclaimer = document.getElementById("disclaimer");
+
 setTimeout(() => {
-  disclaimer.style.display = "none";
+  document.getElementById("disclaimer").style.display = "none";
 }, 5000);
 
 window.onmousemove = (e) => {
