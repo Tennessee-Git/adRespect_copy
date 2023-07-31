@@ -2,13 +2,15 @@
 
 Recreation of https://adrespect.pl/ home page
 
-__for HTML/CSS/JS practice purposes__.
+**for HTML/CSS/JS practice purposes**.
 
 Things to do:
+
 - [x] Cursor follower
 - [x] Basic section layout
 - [ ] "Współpracujmy" section
-- [ ] Footer
+- [x] Footer
 - [ ] Scroll animation
+- [ ] Nav menu
 - [ ] SVGs
 - [ ] CSS fixes for button outlines
