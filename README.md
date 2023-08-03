@@ -8,7 +8,7 @@ Things to do:
 
 - [x] Cursor follower
 - [x] Basic section layout
-- [ ] "Współpracujmy" section
+- [x] "Współpracujmy" section (without animations)
 - [x] Footer
 - [ ] Scroll animation
 - [ ] Nav menu

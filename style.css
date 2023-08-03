@@ -34,6 +34,11 @@ body {
   box-sizing: border-box;
 }
 
+.no-margin {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 #disclaimer {
   position: absolute;
   top: 0;
@@ -173,6 +178,9 @@ body:hover > #trailer {
 }
 
 .hero-btns {
+  display: flex;
+  justify-content: flex-start;
+  gap: 3rem;
   margin-top: 4rem;
 }
 
@@ -346,10 +354,8 @@ li::marker {
 }
 
 .section-background {
-  width: 100%;
   position: relative;
-  top: -220px;
-  left: -205px;
+  top: 200px;
   height: inherit;
   display: flex;
   justify-content: center;
@@ -360,11 +366,12 @@ li::marker {
   white-space: nowrap;
   background: transparent;
   color: inherit;
-  font-size: 150px;
+  font-size: 170px;
   font-weight: 800;
-  line-height: 0.9;
+  line-height: 0.8;
   text-transform: uppercase;
-  opacity: 0.1;
+  opacity: 0.04;
+  mix-blend-mode: screen;
   overflow: hidden;
   z-index: -100;
   pointer-events: none;

@@ -6,9 +6,9 @@ const navbarText = document.querySelectorAll(".header-text");
 const hoverableElements = document.querySelectorAll(".trailer-hoverable");
 const hoverableElementsArray = Array.from(hoverableElements);
 
-// setTimeout(() => {
-//   document.getElementById("disclaimer").style.display = "none";
-// }, 5000);
+setTimeout(() => {
+  document.getElementById("disclaimer").style.display = "none";
+}, 5000);
 
 window.onmousemove = (e) => {
   gradient.style.background = `radial-gradient(
