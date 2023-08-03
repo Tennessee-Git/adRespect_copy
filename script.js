@@ -1,12 +1,14 @@
 const trailer = document.getElementById("trailer");
-const trailerHighlight = document.getElementById("trailer-highlight");
+const trailerHover = document.getElementById("trailer-hover");
 const gradient = document.getElementById("gradient");
 const navbar = document.getElementById("header");
 const navbarText = document.querySelectorAll(".header-text");
+const hoverableElements = document.querySelectorAll(".trailer-hoverable");
+const hoverableElementsArray = Array.from(hoverableElements);
 
-setTimeout(() => {
-  document.getElementById("disclaimer").style.display = "none";
-}, 5000);
+// setTimeout(() => {
+//   document.getElementById("disclaimer").style.display = "none";
+// }, 5000);
 
 window.onmousemove = (e) => {
   gradient.style.background = `radial-gradient(
@@ -20,8 +22,26 @@ window.onmousemove = (e) => {
     transform: `translate(${x}px, ${y}px)`,
   };
 
+  if (hoverableElementsArray.includes(e.target)) {
+    trailer.animate(
+      {
+        outline: "1px solid white",
+        outlineOffset: "25px",
+      },
+      { duration: 400, fill: "forwards" }
+    );
+  } else {
+    trailer.animate(
+      {
+        outline: "1px transparent",
+        outlineOffset: "0",
+      },
+      { duration: 400, fill: "forwards" }
+    );
+  }
+
   trailer.animate(keyframes, {
-    duration: 800,
+    duration: 500,
     fill: "forwards",
   });
 };

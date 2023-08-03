@@ -66,8 +66,9 @@ body {
   z-index: 100000;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 500ms ease;
+  transition: opacity 500ms ease, outline 400ms, outline-offset 400ms;
   margin: 0;
+  outline: 1px transparent;
 }
 
 body:hover > #trailer {
@@ -236,6 +237,7 @@ body:hover > #trailer {
 .btn-outline {
   color: white;
   border: 2px solid var(--gradient-end);
+  border-style: inset;
   transition: 0.25s;
   transition-property: background-color, color;
 }
@@ -353,15 +355,15 @@ li::marker {
   align-items: center;
 }
 
-.partner-logo > img {
+.partner-logo img {
   filter: grayscale(1);
 }
 
-.partner-logo:hover > img {
+.partner-logo:hover img {
   filter: grayscale(0);
 }
 
-.partner-logo > img {
+.partner-logo img {
   width: 300px;
   height: 150px;
 }
