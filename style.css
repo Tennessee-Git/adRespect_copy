@@ -103,12 +103,13 @@ body:hover > #trailer {
   position: fixed;
   top: 0;
   left: 0;
+  width: 80%;
+  padding: 0 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: var(--transparent-background);
   height: var(--header-height);
-  width: 100%;
   z-index: 100;
   transition: all 0.2s ease-in;
 }
@@ -130,7 +131,7 @@ body:hover > #trailer {
 }
 
 .header-button {
-  justify-self: end;
+  justify-self: flex-end;
   cursor: pointer;
   margin-right: 60px;
 }
@@ -161,8 +162,8 @@ body:hover > #trailer {
   max-width: 100%;
   padding-top: 12rem;
   padding-bottom: 25.6rem;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
   z-index: 100;
   position: relative;
 }
@@ -250,7 +251,6 @@ body:hover > #trailer {
 .btn-outline {
   color: white;
   border: 2px solid var(--gradient-end);
-  border-style: inset;
   transition: 0.25s;
   transition-property: background-color, color;
 }
@@ -281,7 +281,7 @@ body:hover > #trailer {
 
 .container-medium {
   max-width: 80%;
-  margin: 0 auto;
+  margin: 0 15%;
 }
 
 .container-columns {

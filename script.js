@@ -12,6 +12,7 @@ var scrollPosition;
 
 setTimeout(() => {
   document.getElementById("disclaimer").style.display = "none";
+  window.scrollTo(0, 0);
 }, 5000);
 
 menuClose.addEventListener("click", () => {
@@ -79,10 +80,6 @@ function changeNavbarOnScroll() {
       element.classList.remove("header-text-hidden");
     });
   }
-}
-
-function disableScroll() {
-  window.scrollTo(0, 0);
 }
 
 window.onscroll = function () {
