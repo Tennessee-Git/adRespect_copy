@@ -5,10 +5,31 @@ const navbar = document.getElementById("header");
 const navbarText = document.querySelectorAll(".header-text");
 const hoverableElements = document.querySelectorAll(".trailer-hoverable");
 const hoverableElementsArray = Array.from(hoverableElements);
+const menu = document.getElementById("menu");
+const menuClose = document.getElementById("menuClose");
+const headerButtons = document.getElementById("headerButtons");
+var scrollPosition;
 
 setTimeout(() => {
   document.getElementById("disclaimer").style.display = "none";
 }, 5000);
+
+menuClose.addEventListener("click", () => {
+  menu.style.display = "none";
+  navbar.style.display = "flex";
+  window.onscroll = function () {
+    changeNavbarOnScroll();
+  };
+});
+
+headerButtons.addEventListener("click", () => {
+  scrollPosition = window.scrollY;
+  menu.style.display = "block";
+  navbar.style.display = "none";
+  window.onscroll = function () {
+    window.scrollTo(0, scrollPosition);
+  };
+});
 
 window.onmousemove = (e) => {
   gradient.style.background = `radial-gradient(
@@ -46,7 +67,7 @@ window.onmousemove = (e) => {
   });
 };
 
-window.onscroll = function () {
+function changeNavbarOnScroll() {
   if (window.scrollY >= 1) {
     navbar.classList.add("header-scrolled");
     navbarText.forEach((element) => {
@@ -58,4 +79,12 @@ window.onscroll = function () {
       element.classList.remove("header-text-hidden");
     });
   }
+}
+
+function disableScroll() {
+  window.scrollTo(0, 0);
+}
+
+window.onscroll = function () {
+  changeNavbarOnScroll();
 };

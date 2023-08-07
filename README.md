@@ -10,8 +10,8 @@ Things to do:
 - [x] Basic section layout
 - [x] "Współpracujmy" section (without animations)
 - [x] Footer
-- [ ] Scroll animation
-- [ ] Nav menu
+- [ ] Scroll animations
+- [x] Nav menu
 - [x] SVGs
 - [ ] CSS fixes for button outlines
 
